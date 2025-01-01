@@ -62,58 +62,67 @@ const TagCreation = () => {
   };
 
   const handleCreateTopic = async () => {
-    if (createQuery.split("/").length !== 3) {
+    // Append the "|m/s" suffix to the createQuery value
+    const modifiedQuery = createQuery + "|m/s";  // This adds "|m/s" to the end of the input tagname
+  
+    // Validate if the modified query follows the required format
+    if (modifiedQuery.split("/").length < 3) {
       return setCreateTagnameValidationError("admin_alltopics_error_color");
     }
+  
     try {
+      // Send the modified topic name with the appended "|m/s" to the API
       await apiClient.post("/mqtt/create-tagname", {
-        topic: createQuery,
+        topic: modifiedQuery,
       });
       toast.success("TagName created successfully!");
+  
+      // Fetch the latest topics after creation
       await fetchRecentFiveTopics();
-      if (createQuery.split("/").length === 3) {
-        setCreateQuery(
-          createQuery.split("/")[0] + "/" + createQuery.split("/")[1] + "/"
-        );
-        setCreateTagnameValidationError("");
-      } else {
-        setCreateQuery("");
-        setCreateTagnameValidationError("");
-      }
+      
+      // Update the input field with the modified query (including "|m/s")
+      setCreateQuery(modifiedQuery);  // Show the modified tagname
+      setCreateTagnameValidationError("");  // Reset the validation error
       setTopicCreated(!topiCreated);
     } catch (error) {
       toast.error(error?.response?.data?.message);
     }
   };
-
+  
   const handleCreateAndSubscribeTopic = async () => {
-    if (createQuery.split("/").length !== 3) {
+    // Append the "|m/s" suffix to the createQuery value
+    const modifiedQuery = createQuery + "|m/s";  // This adds "|m/s" to the end of the input tagname
+  
+    // Validate if the modified query follows the required format
+    if (modifiedQuery.split("/").length < 3) {
       return setCreateTagnameValidationError("admin_alltopics_error_color");
     }
+  
     try {
+      // Create the tagname
       await apiClient.post("/mqtt/create-tagname", {
-        topic: createQuery,
+        topic: modifiedQuery,
       });
       toast.success("TagName created successfully!");
+  
+      // Subscribe to the newly created tagname
       await apiClient.post("/mqtt/subscribe", {
-        topic: createQuery,
+        topic: modifiedQuery,
       });
-      toast.success(`Subscribed to ${createQuery} successfully!`);
+      toast.success(`Subscribed to ${modifiedQuery} successfully!`);
+  
+      // Fetch the latest topics after creation and subscription
       await fetchRecentFiveTopics();
-      if (createQuery.split("/").length === 3) {
-        setCreateQuery(
-          createQuery.split("/")[0] + "/" + createQuery.split("/")[1] + "/"
-        );
-        setCreateTagnameValidationError("");
-      } else {
-        setCreateQuery("");
-        setCreateTagnameValidationError("");
-      }
+      
+      // Update the input field with the modified query (including "|m/s")
+      setCreateQuery(modifiedQuery);  // Show the modified tagname
+      setCreateTagnameValidationError("");  // Reset the validation error
       setTopicCreated(!topiCreated);
     } catch (error) {
       toast.error(error?.response?.data?.message);
     }
   };
+  
 
   const handleDeleteTopic = async () => {
     try {
