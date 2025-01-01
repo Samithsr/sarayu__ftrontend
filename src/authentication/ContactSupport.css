@@ -1,0 +1,68 @@
+.contact_support {
+    height: 100vh;
+}
+#row_contact_support {
+    height: 100%;
+    margin: 0;
+}
+.contact_support_title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0px !important;
+}
+.col_right_contact_support {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_support_container {
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+}
+.login_contact_support_submit {
+    display: flex;
+    justify-content: center;
+}
+.login_contact_support_submit > button {
+    color: white;
+    font-size: 20px;
+    width: 40%;
+    /* background: #67809a; */
+    background: rgb(25, 30, 49);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 1.21;
+    outline: none;
+    padding: 14px;
+}
+.login_contact_support_footer {
+    display: flex;
+    justify-content: center;
+}
+.login_contact_support_footer > p {
+    margin: 0;
+    /* color: #67809a; */
+    color: rgb(25, 30, 49);
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+}
+.login_contact_support_footer > p > span {
+    /* color: #67809a; */
+    color: rgb(25, 30, 49);
+    font-weight: bolder;
+    text-decoration: underline;
+    cursor: pointer;
+}
+@media (width < 500px) {
+    .contact_support_container {
+        width: 100%;
+    }
+    .contact_support_title {
+        font-size: 35px;
+    }
+}

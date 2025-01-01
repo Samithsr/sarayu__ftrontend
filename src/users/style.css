@@ -1,0 +1,726 @@
+/* historygraph style starts here */
+._viewgraph_history_main_container {
+    overflow: hidden;
+    border: 2px solid rgb(18, 18, 90);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.157);
+    border-radius: 20px;
+}
+._historygraph_controls {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+._historygraph_date-pickers {
+    z-index: 999999999;
+    display: flex;
+    gap: 10px;
+}
+._historygraph_date-pickers input {
+    border-radius: 5px;
+    border: 2px solid rgba(128, 128, 128, 0.425);
+    outline: none;
+    padding: 4px 5px;
+    text-align: center;
+}
+._historygraph_dropdown select {
+    border-radius: 5px;
+    border: 2px solid rgba(128, 128, 128, 0.425);
+    outline: none;
+    padding: 4px 5px;
+    text-align: center;
+}
+._historygraph_apply-btn {
+    height: 30px;
+    width: 100px;
+    outline: none;
+    border: none;
+    background: red;
+    color: white;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+._historygraph_apply-btn:hover {
+    background: rgb(229, 1, 1);
+}
+/* historygraph style ends here */
+
+.users_main_container {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+._viewgraph_downloadimg_csv_btn_container {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    padding-right: 20px;
+}
+._viewgraph_downloadimg_csv_btn_container > button {
+    border: none;
+    outline: none;
+    padding: 4px 5px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border-radius: 4px;
+    border: 2px solid rgba(128, 128, 128, 0.303);
+    background: white;
+    color: rgba(0, 0, 0, 0.685);
+}
+/* SmallGraph style starts here */
+.allusers_favorites_main_container {
+    width: 97vw;
+}
+.allusers_favorites_main_btn_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.allusers_favorites_main_btn_container > div {
+    max-width: min-content;
+    padding: 4px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.23);
+    display: flex;
+    flex-wrap: nowrap;
+}
+.allusers_favorites_main_btn_container > div > button {
+    height: 35px;
+    width: 120px;
+    font-size: 14px;
+    background: transparent;
+    outline: none;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+.allusers_favorites_digitalmeter_container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 40px;
+}
+.allusers_favorites_digitalmeter_container > div {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.405);
+    overflow: hidden;
+}
+.allusers_favorites_main_active_btn {
+    color: white;
+    position: relative;
+    background: orange !important;
+}
+.allusers_favorites_main_active_btn::after {
+    content: " ";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    left: 44%;
+    right: 50%;
+    animation: activeFavBtn 0.5s linear 0s forwards normal;
+}
+@keyframes activeFavBtn {
+    from {
+        opacity: 0;
+        bottom: -10px;
+    }
+    to {
+        opacity: 1;
+        bottom: -10px;
+    }
+}
+.users_small_graphs_primary_container {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+
+.users_small_graphs_secondary_container {
+    width: 430px;
+    height: 220px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.372);
+    position: relative;
+}
+.users_small_graphs_favorite_tab_switch_container {
+    position: absolute;
+    top: 0;
+    max-width: min-content;
+    z-index: 99999;
+    transform: translateY(-99%) translateX(-1px);
+    display: flex;
+    border-radius: 5px;
+}
+.users_small_graphs_favorite_tab_switch_container > div {
+    padding: 2px 15px;
+    background: purple;
+    cursor: pointer;
+    color: white;
+    border: 2px solid purple;
+    font-size: 16px;
+}
+.users_small_graphs_favorite_tab_switch_container > div:first-child {
+    border-top-left-radius: 5px;
+}
+.users_small_graphs_favorite_tab_switch_container > div:last-child {
+    border-top-right-radius: 5px;
+}
+.users_small_graphs_favorite_tab_switch_active {
+    color: red !important;
+    background: white !important;
+    border-bottom: 2px solid transparent !important;
+}
+.users_small_graphs_favorite_tab_switch_container > div:hover {
+    color: white !important;
+    background: red !important;
+    border: 2px solid transparent;
+}
+.users_graphs_topic_name {
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.users_graphs_topic_name > p {
+    margin: 0;
+    font-size: 16px;
+    color: purple;
+}
+.users_graphs_view_edit_icon_container {
+    position: absolute;
+    max-width: min-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+}
+.users_graphs_view_edit_icon_container > div {
+    padding: 3px 5px;
+    /* background: rgba(207, 207, 248, 0.385); */
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* SmallGraph style ends here */
+
+/* favorites digital view style starts here */
+.allusers_favorite_digital_meter_container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.allusers_favorite_digital_meter_prev_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    padding: 0 15px;
+    display: flex;
+    user-select: none;
+    align-items: center;
+}
+.allusers_favorite_digital_meter_next_container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0 15px;
+    height: 100%;
+    display: flex;
+    user-select: none;
+    align-items: center;
+}
+.allusers_favorite_digital_meter_content_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.allusers_favorite_digital_meter_content_container > p {
+    margin: 0;
+    font-size: 20px;
+    color: gray;
+}
+/* favorites digital view style ends here */
+
+/* allusers digital view all topics starts here */
+.allusers_digitalview_main_container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+.allusers_digitalview_main_container > div {
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.285);
+}
+/* allusers digital view all topics ends here */
+
+/*                            AllOperator new section starts here                     */
+
+/* radio button style starts here */
+
+/* radio button style ends here */
+/*                            AllOperator new section ends here                     */
+
+/* single user dashboard style starts here */
+.singleuserdashboard_main_container > div:first-child {
+    width: 97.5vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    padding-bottom: 0;
+    color: gray;
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.singleuserdashboard_close_icon {
+    cursor: pointer;
+}
+/* single user dashboard style ends here */
+
+/* ViewGraph style starts here */
+._viewgraph_main_container {
+    width: 96vw;
+    height: 100%;
+    padding: 5px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+._viewgraph_main_live_and_history_container {
+    display: flex;
+    justify-content: center;
+}
+._viewgraph_main_container > header {
+    height: 6vh;
+    width: 100%;
+    background: rgb(7, 10, 40);
+    color: white;
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    font-size: 20px;
+    border: 4px solid rgb(7, 10, 40);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+._viewgraph_main_container > header > div {
+    columns: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+._viewgraph_main_container > header > div:last-child {
+    cursor: pointer;
+}
+._view_graph_download_current_plot_btn_container {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 15px 20px;
+    gap: 10px;
+}
+._view_graph_download_current_plot_btn_container > button {
+    padding: 4px 10px;
+    border: 2px solid rgba(128, 128, 128, 0.395);
+    border-radius: 4px;
+    background: white;
+    color: rgb(78, 78, 78);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+._view_graph_download_current_plot_btn_container > button:hover {
+    border: 2px solid gray;
+    color: black;
+}
+/* ._viewgraph_main_container > header */
+._viewgraph_main_container > div {
+    /* box-shadow: 0 0 4px black; */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 100%;
+    overflow: hidden;
+    border: 2px solid rgb(7, 10, 40);
+}
+/* ViewGraph style ends here */
+/* edit graph starts here */
+._editgraph_main_container {
+    padding: 10px 0;
+}
+._editgraph_graph_container {
+    width: 96vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+._editgraph_second_main_left_container > header {
+    height: 6vh;
+    width: 100%;
+    background: rgb(7, 10, 40);
+    color: white;
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    margin: 0;
+}
+._editgraph_second_main_container {
+    border: 2px solid rgb(7, 10, 40);
+    border-radius: 20px;
+    overflow: hidden;
+}
+._editgraph_main_input_container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+._editgraph_main_select_numberof_threshold > select {
+    width: 300px;
+    border-radius: 50px;
+    height: 35px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border: 2px solid rgb(7, 10, 40);
+}
+._editgraph_savechanges_button_container {
+    display: flex;
+    gap: 30px;
+}
+._editgraph_savechanges_button_container > button {
+    width: 120px;
+    border: none;
+    padding: 5px 0;
+    border-radius: 5px;
+    color: white;
+    background: rgb(7, 10, 40);
+}
+._editgraph_main_input_container > section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+._editgraph_main_input_container > section > div {
+    display: flex;
+    gap: 5px;
+}
+._editgraph_main_input_container > section > div > input {
+    width: 220px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(7, 10, 40);
+    border-radius: 50px;
+}
+/* edit graph ends here */
+/* change password section starts here */
+.allusers_change_password_container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.allusers_change_password_logo_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.allusers_change_password_logo_container > div {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+.allusers_change_password_container > div {
+    width: 25vw;
+    min-height: 20px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 4px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.219);
+}
+.allusers_change_password_container > div > p {
+    margin: 0;
+    text-align: center;
+    font-size: 22px;
+    transform: translateY(-10px);
+}
+.allusers_change_password_input_container {
+    display: flex;
+    flex-direction: column;
+}
+.allusers_change_password_input_container > input {
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(12, 12, 52, 0.786);
+}
+.allusers_change_password_button_container {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 15px;
+}
+.allusers_change_password_button_container > button {
+    border: none;
+    outline: none;
+    padding: 7px 0;
+    border-radius: 5px;
+    border: 2px solid rgba(128, 128, 128, 0.377);
+    transition: all 0.3s ease-in-out;
+}
+.allusers_change_password_button_container > button:first-child {
+    background: #34495e;
+    color: white;
+}
+.allusers_change_password_button_container > button:first-child:hover {
+    background: #2a3b4b;
+}
+.allusers_change_password_button_container > button:last-child {
+    background: white;
+    color: gray;
+}
+.allusers_change_password_button_container > button:last-child:hover {
+    border: 2px solid rgba(0, 0, 0, 0.468);
+    color: black;
+}
+/* change password section ends here */
+/* all users style starts here  */
+.alluser_alloperators_container {
+    width: 97.5vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.242);
+    border-radius: 5px;
+    margin: 20px 0;
+}
+.tradingview-widget-container__logo {
+    display: none !important;
+}
+
+.alluser_alloperators_container::-webkit-scrollbar {
+    height: 8px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.alluser_alloperators_container::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.alluser_alloperators_container::-webkit-scrollbar:vertical {
+    display: none;
+}
+
+.alluser_alloperators_scrollable-table {
+    min-width: 900px;
+}
+.alluser_alloperators_table {
+    width: 100%;
+}
+.alluser_alloperators_table > thead > tr {
+    background: #34495e;
+    color: white;
+}
+.alluser_alloperators_table > thead > tr > th {
+    padding: 12px 15px;
+    text-align: center;
+}
+.alluser_alloperators_table > tbody > tr:nth-child(odd) {
+    background: #f9fafd;
+}
+.alluser_alloperators_table > tbody > tr:nth-child(even) {
+    background: #ffffff;
+}
+.alluser_alloperators_table > tbody > tr > td {
+    padding: 10px 15px;
+    text-align: center;
+    border: 1px solid rgba(128, 128, 128, 0.269);
+}
+.alluser_alloperators_table > tbody > tr:hover {
+    background: #f1c404;
+}
+.allusers_dashboard_live_data_th {
+    position: relative;
+}
+.allusers_dashboard_live_data_th:after {
+    content: " ";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    right: 16px;
+    top: 45%;
+    bottom: 50%;
+    background-color: rgb(0, 255, 0);
+    animation: liveDot 1.5s infinite 0s forwards normal running;
+}
+@keyframes liveDot {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.allusers_dashboard_graph_digital_td {
+    padding: 0;
+}
+.allusers_dashboard_graph_digital_td > button {
+    width: 45%;
+    margin: 2px;
+    border: none;
+    outline: none;
+    background: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.278);
+}
+.allusers_dashboard_graph_digital_td > button:first-child {
+    background: red;
+    color: white;
+}
+.allusers_dashboard_graph_digital_td > button:last-child {
+    background: #34495e;
+    color: white;
+}
+/* all users style ends here  */
+
+/* Report section starts here */
+
+._allusers_topic_based_report_title_section {
+    display: flex;
+    justify-content: space-between;
+    width: 97vw;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: gray;
+}
+._allusers_topic_based_report_input_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+._allusers_topic_based_report_datepicker_input input {
+    border-radius: 5px;
+    border: 2px solid rgba(128, 128, 128, 0.308);
+    outline: none;
+    text-align: center;
+}
+._allusers_topic_based_report_minvalue_input input {
+    border-radius: 5px;
+    border: 2px solid rgba(128, 128, 128, 0.308);
+    outline: none;
+    width: 70px;
+    padding-left: 10px;
+    text-align: center;
+}
+._allusers_topic_based_report_minvalue_input input::placeholder {
+    font-size: 14px;
+}
+.__allusers_topic_based_report_button-container {
+    display: flex;
+    gap: 8px;
+}
+.__allusers_topic_based_report_button-container > button {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+.__allusers_topic_based_report_button-container > button:first-child {
+    background: red;
+    color: white;
+    height: 30px;
+    width: 80px;
+}
+.__allusers_topic_based_report_button-container > button:first-child:hover {
+    background: rgb(195, 0, 0);
+}
+.__allusers_topic_based_report_button-container > button:last-child {
+    background: blue;
+    color: white;
+    height: 30px;
+    width: 120px;
+}
+.__allusers_topic_based_report_button-container > button:last-child:hover {
+    background: rgb(0, 0, 186);
+}
+/* Report section ends here */
+
+.graph_shadow {
+    box-sizing: 0 0 4px black !important;
+}
+.threshold-label {
+    background: white;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 2px 5px;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    pointer-events: none; /* Prevent mouse events on the label */
+}
+@media (width < 700px) {
+    .users_small_graphs_secondary_container {
+        width: 340px;
+    }
+    ._editgraph_graph_container {
+        grid-template-columns: 100%;
+    }
+    ._editgraph_graph__right {
+        padding: 35px 0;
+    }
+    .allusers_change_password_container > div {
+        width: 100vw;
+        margin: 0 10px;
+    }
+    .alluser_alloperators_container {
+        margin-bottom: 60px;
+    }
+    .alluser_alloperators_table > thead > tr > th {
+        font-size: 16px;
+        padding: 12px 6px;
+        font-weight: 400;
+    }
+    .alluser_alloperators_table > tbody > tr > td {
+        font-size: 15px;
+        padding: 12px 6px;
+    }
+    .singleuserdashboard_main_container > div:first-child {
+        width: 97vw;
+    }
+}

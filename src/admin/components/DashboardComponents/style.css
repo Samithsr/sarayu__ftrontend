@@ -1,0 +1,618 @@
+/* maptopic style starts here */
+._admin_maptopic_main_container {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 50% 50%;
+    height: 90vh;
+    margin: 0 10px;
+    margin-top: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.288);
+    background: white;
+}
+
+._admin_maptopic_left_container > div {
+    width: 100%;
+    height: 45vh;
+    overflow-x: hidden;
+    border-right: 2px solid rgba(0, 0, 0, 0.257);
+}
+._admin_maptopic_left_bottom_container > p {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+._admin_maptopic_left_top_container > header {
+    width: 100%;
+    text-align: center;
+    background: rgb(4, 4, 34);
+    color: white;
+    padding: 4px 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+._admin_maptopic_left_top_topic_container {
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 40vh;
+}
+._admin_maptopic_left_top_topic_alternative_message_container {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+._admin_maptopic_left_top_topic_alternative_message_container > p {
+    margin: 0;
+    font-size: 30px;
+    color: rgba(128, 128, 128, 0.558);
+}
+._admin_maptopic_left_top_topic_container > div {
+    cursor: pointer;
+    min-width: 40px;
+    height: 37px;
+    padding-left: 6px;
+    background: orange;
+    color: white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.425);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+._admin_maptopic_left_top_topic_container > div > span:last-child {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-left: 2px;
+    height: 100%;
+}
+._admin_maptopic_left_top_topic_container > div > span:last-child > p {
+    margin: 0;
+    padding: 2px 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+._admin_maptopic_left_top_topic_container > div > span:last-child > p:first-child {
+    background-color: rgb(2, 2, 148);
+    transition: all 0.3s ease-in-out;
+}
+._admin_maptopic_left_top_topic_container > div > span:last-child > p:first-child:hover {
+    background: rgba(2, 2, 148, 0.704);
+}
+._admin_maptopic_left_top_topic_container > div > span:last-child > p:last-child {
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+._admin_maptopic_left_top_topic_container > div > span:last-child > p:last-child:hover {
+    background: rgba(255, 2, 2, 0.721);
+}
+/* digital meter assign starts here */
+._admin_assign_meter_main_container {
+    position: fixed;
+    height: 100vh;
+    width: 99.7%;
+    margin-left: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+._admin_assign_meter_container > header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vh;
+    background-color: rgb(8, 8, 70);
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+._admin_assign_meter_container > header > p {
+    margin: 0;
+    padding-left: 20px;
+    color: white;
+}
+._admin_assign_meter_container > section {
+    width: 100%;
+}
+._admin_assign_meter_container > section > p {
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+}
+._admin_assign_meter_close {
+    background: red;
+    border-top-right-radius: 4px;
+    width: 48px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+._admin_assign_meter_close:hover {
+    background: rgb(214, 0, 0);
+}
+._admin_assign_meter_container {
+    background: white;
+    width: 90vw;
+    height: 88vh;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.179);
+    position: relative;
+}
+
+/* digital meter assign ends here */
+
+/* degital merter assign model carousel starts here */
+._admin_assign_meter_carousel_container {
+    max-width: 100vw;
+    height: 18vh;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    align-items: center;
+    padding: 0 45px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    /* box-shadow: 0 0 4px rgba(0, 0, 0, 0.495); */
+    border-top: 1px solid rgba(128, 128, 128, 0.205);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.205);
+    position: relative;
+}
+._admin_assign_meter_carousel_container > div {
+    min-width: 120px;
+    max-width: 120px;
+    cursor: pointer;
+    height: 120px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.268);
+    transition: all 0.3s ease-in-out;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+._admin_assign_meter_carousel_container > div > img {
+    width: 100%;
+    height: 100%;
+}
+._admin_assign_meter_carousel_container > div:hover {
+    border: 4px solid rgb(130, 16, 223);
+}
+._admin_assign_meter_carousel_container_active_meter {
+    border: 4px solid rgb(130, 16, 223) !important;
+}
+._admin_assign_meter_carousel_left_button_container {
+    position: fixed;
+    left: 15px;
+    height: 18vh;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    width: 60px;
+    justify-content: center;
+    user-select: none;
+}
+._admin_assign_meter_carousel_right_button_container {
+    position: fixed;
+    right: 15px;
+    height: 18vh;
+    justify-content: center;
+    padding: 0 4px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+._admin_assign_meter_carousel_left_button_container > div {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: rgba(0, 0, 0, 0.582); */
+    border-radius: 50%;
+    color: black;
+    cursor: pointer;
+    font-size: 30px;
+}
+._admin_assign_meter_carousel_right_button_container > div {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    cursor: pointer;
+    align-items: center;
+    /* background: rgba(0, 0, 0, 0.582); */
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+/* degital merter assign model carousel ends here */
+
+/* digital meter main body style starts here */
+._admin_assign_digital_meter_and_edit_main_container {
+    height: 58vh;
+    width: 100%;
+    display: flex;
+}
+._admin_assign_digital_meter_edit_container {
+    width: 30%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.097);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+._admin_assign_digital_meter_edit_container > div {
+    width: 90%;
+    height: 90%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.202);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+._admin_assign_digital_meter_edit_container > div > p {
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+._admin_assign_digital_meter_edit_input_container > input {
+    width: 320px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.209);
+    padding: 7px 10px;
+    border-radius: 50px;
+    text-align: center;
+    color: gray;
+}
+._admin_assign_digital_meter_edit_input_container > select {
+    width: 320px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.209);
+    color: gray;
+    padding: 7px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+}
+._admin_assign_digital_meter_edit_save_button {
+    margin-top: 20px;
+    width: 100%;
+}
+._admin_assign_digital_meter_edit_save_button > button {
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    color: white;
+    background: red;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+._admin_assign_digital_meter_edit_save_button > button:hover {
+    background: rgb(222, 1, 1);
+}
+
+._admin_assign_digital_meter_view_container {
+    width: 70%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.097);
+    background: black;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+._admin_assign_digital_meter_view_container > div {
+    /* transform: translateY(60px); */
+}
+._admin_assign_digital_meter_view_not_selected_message_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+._admin_assign_digital_meter_view_not_selected_message_container > p {
+    margin: 0;
+    font-size: 40px;
+    color: rgba(253, 253, 253, 0.472);
+}
+/* digital meter main body style ends here */
+
+._admin_maptopic_right_container > header {
+    height: 4.2vh;
+    background: rgb(4, 4, 34);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+._admin_maptopic_right_container > div {
+    height: 85.8vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+._admin_maptopic_right_tagnames {
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.182);
+}
+._admin_maptopic_right_tagnames:hover {
+    background: orange;
+    color: white;
+}
+._admin_maptopic_right_active_tagnames {
+    display: none;
+}
+._admin_maptopic_left_top_overright_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 !important;
+    height: 40px;
+    padding-left: 20px !important;
+    align-items: center;
+}
+._admin_maptopic_left_top_overright_header > button {
+    background: red;
+    margin: 0;
+    border: none;
+    outline: none;
+    padding: 0 50px;
+    color: white;
+    font-size: 14px;
+    height: 100%;
+}
+._admin_maptopic_right_overwright_header {
+    justify-content: space-between !important;
+    padding: 0 20px !important;
+    padding-right: 6px !important;
+    height: 40px !important;
+}
+._admin_maptopic_right_overwright_header_input_container > input {
+    border: none;
+    outline: none;
+    padding: 4px 30px;
+    text-align: center;
+}
+/* maptopic style ends here */
+.admin_show_all_topic_container {
+    margin: 10px;
+    border: 2px solid rgba(128, 128, 128, 0.28);
+    padding: 10px;
+}
+/* Main container fixed to 100vh */
+.admin_alltopics_table_all_cred_container {
+    width: 95%;
+    max-width: 1200px;
+    height: 84vh; /* Full viewport height */
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Prevent content overflow outside the container */
+    margin-top: 10px;
+}
+.admin_tagcreation_container {
+    /* background: red; */
+    padding-top: 40px;
+}
+.admin_tagcreation_container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.admin_tagcreation_container > div > h4 {
+    margin: 0;
+    margin: 20px 0;
+    color: gray;
+}
+.admin_tagcreation_container > div > input {
+    width: 95%;
+    margin: 0;
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    border: 2px solid rgba(128, 128, 128, 0.394);
+}
+.admin_tagcreation_container_note {
+    width: 85%;
+    text-align: center;
+    color: green;
+}
+.admin_alltopics_error_color {
+    color: red;
+}
+.admin_tagcreation_button_container {
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.admin_tagcreation_button_container > button {
+    border: none;
+    outline: none;
+    width: 180px;
+    height: 35px;
+    border-radius: 4px;
+}
+.admin_tagcreation_button_container > button:first-child {
+    color: white;
+    background: black;
+}
+.admin_tagcreation_button_container > button:last-child {
+    color: white;
+    background: red;
+}
+/* Fixed header inside the container */
+.admin_alltopics_table_all_cred_header {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Scrollable table container */
+.admin_alltopics_table_all_cred_scrollable-table {
+    flex: 1; /* Fills the remaining space below the header */
+    overflow-y: auto; /* Enable vertical scrolling for the table content */
+    border-radius: 10px;
+}
+
+/* Hide the scrollbar */
+.admin_alltopics_table_all_cred_scrollable-table::-webkit-scrollbar {
+    display: none;
+}
+
+/* Table styling */
+.admin_alltopics_table_all_cred_table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+/* Table header styling */
+.admin_alltopics_table_all_cred_table th {
+    background-color: #34495e;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0; /* Keeps table header visible during scrolling */
+    z-index: 1;
+}
+
+/* Table cell styling */
+.admin_alltopics_table_all_cred_table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Alternate row coloring for readability */
+.admin_alltopics_table_all_cred_table tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.admin_alltopics_table_all_cred_table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Hover effect for rows */
+.admin_alltopics_table_all_cred_table tr:hover {
+    background-color: #9797975c;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.admin_alltopicname_table_subscribe_button {
+    border: none;
+    outline: none;
+    color: white;
+    background: orange;
+    height: 30px;
+    width: 100px;
+    border-radius: 4px;
+}
+.admin_alltopicname_table_subscribed_button {
+    border: none;
+    outline: none;
+    color: white;
+    background: black;
+    height: 30px;
+    width: 100px;
+    border-radius: 4px;
+}
+
+/* search bar logic starts here */
+.admin_tagcreation_all_topics_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+.admin_alltopics_searchbar_container {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 95%;
+    border: 2px solid rgba(0, 0, 0, 0.253);
+    margin-top: 6px;
+    border-radius: 4px;
+}
+.admin_alltopics_searchbar_container > input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0 20px;
+}
+.admin_alltopics_searchbar_container > button {
+    width: 5%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: #34495e;
+    /* background: red; */
+    color: white;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    border-left: 2px solid rgba(0, 0, 0, 0.253);
+}
+.admin_alltopics_searchbar_container > button:hover {
+    background: rgb(216, 1, 1);
+}
+/* search bar logic ends here */
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .alluser_alloperators_all_cred_container {
+        width: 100%;
+    }
+
+    .admin_alltopics_table_all_cred_table th,
+    .admin_alltopics_table_alloperators_all_cred_table td {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 10px;
+    }
+}

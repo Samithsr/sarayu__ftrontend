@@ -1,0 +1,189 @@
+#login {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.signin_title {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 8px !important;
+}
+.login_right {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.two_step_form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.form_feilds_container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.login_btn_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.login_prev_btn,
+.login_next_btn {
+    color: white;
+    font-size: 20px;
+    width: 40%;
+    /* background: #67809a; */
+    background-color: rgb(25, 30, 49);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 1.21;
+    outline: none;
+    padding: 14px;
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+}
+.login_prev_btn:disabled {
+    color: gray;
+    font-size: 20px;
+    width: 40%;
+    background: rgb(240, 246, 252);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 1.21;
+    outline: none;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: not-allowed;
+}
+/* input form details */
+.login_inputContainer {
+    width: 100%;
+}
+.login_inputContainer > label {
+    color: #67809a;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0 !important;
+}
+.login_inputContainer > input {
+    margin: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    width: 100%;
+    background: #f5faff;
+    border: 2px solid rgb(25, 30, 49);
+}
+.login_inputContainer > input::placeholder {
+    color: rgba(0, 0, 0, 0.346);
+}
+.login_inputContainer > input:focus {
+    outline: none;
+    border: 2px solid #176eccc5;
+}
+.login_inputContainer > select {
+    margin: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(103, 103, 103);
+    padding: 10px;
+    width: 100%;
+    background: #f5faff;
+    border: 2px solid rgb(25, 30, 49);
+}
+.login_inputContainer > select:focus {
+    outline: none;
+    border: 2px solid #176eccc5;
+}
+.login_inputContainer > textarea {
+    margin: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    width: 100%;
+    background: #f5faff;
+    /* border: 2px solid #67809ac5; */
+    border: 2px solid rgb(25, 30, 49);
+}
+.login_inputContainer > textarea::placeholder {
+    color: rgba(0, 0, 0, 0.346);
+}
+.login_inputContainer > textarea:focus {
+    outline: none;
+    border: 2px solid #176eccc5;
+}
+.login_dots_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.login_dots_container > .dot {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #dededebb;
+    display: flex;
+    color: black;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.login_dots_container > .line {
+    height: 1.5px;
+    width: 80%;
+    background-color: #dededebb;
+}
+.active_line {
+    /* background-color: #67809a !important; */
+    background-color: rgb(25, 30, 49) !important;
+}
+.active_dot {
+    /* background-color: #67809a !important; */
+    background-color: rgb(25, 30, 49) !important;
+    color: white !important;
+}
+.login_contact_support {
+    color: #67809a;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    transform: translateY(-20px);
+}
+.contact_support_link {
+    /* color: #67809a; */
+    color: rgb(25, 30, 49);
+    font-weight: bolder;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.contact_support_link:hover {
+    /* color: #67809a; */
+    color: rgb(25, 30, 49);
+}
+.error {
+    color: red;
+}
+@media (width < 500px) {
+    .two_step_form {
+        width: 100%;
+    }
+    .signin_title {
+        font-size: 35px;
+    }
+}

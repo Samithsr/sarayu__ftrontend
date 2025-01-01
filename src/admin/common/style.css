@@ -1,0 +1,306 @@
+/* DashboardCTitle css */
+.dashboard_main_section_title {
+    width: 100%;
+    padding: 10px;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.196);
+    color: white;
+    padding-left: 15px;
+    margin: 0;
+    border-bottom: 1px solid rgba(187, 187, 187, 0.353);
+    background: rgb(25, 30, 49);
+    /* border-top-left-radius: 5px;
+    border-top-right-radius: 5px; */
+    display: none;
+}
+/* Dashboard mail */
+.mail_header_cred_set_container {
+    width: 100%;
+    /* border-top-left-radius: 5px;
+    border-top-right-radius: 5px; */
+    padding: 10px;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.196);
+    margin: 0;
+    background: rgb(25, 30, 49);
+    border-bottom: 1px solid rgba(187, 187, 187, 0.353);
+}
+.mail_header_cred_set_container > h2 {
+    color: white !important;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 15px;
+    padding-top: 5px;
+    color: rgba(0, 0, 0, 0.448);
+}
+.mail_header_cred_set_fields_container {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+.mail_header_cred_set_fields_container > button {
+    border: none;
+    outline: none;
+    color: white;
+    background: rgb(1, 173, 1);
+    padding: 5px 10px;
+    border-radius: 2px;
+    height: 64px;
+    border-top-right-radius: 5px;
+    margin-right: -32px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    gap: 3px;
+}
+.form__group {
+    position: relative;
+    padding: 20px 0 0;
+    width: 100%;
+    max-width: 180px;
+}
+
+.form__field {
+    font-family: inherit;
+    width: 130%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 17px;
+    color: white;
+    padding: 2px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+    color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #aeaeae;
+    pointer-events: none;
+}
+
+.form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 500;
+    border-width: 3px;
+    /* border-image: linear-gradient(to right, #000000, #116399); */
+    border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #1254ce;
+    font-weight: 700;
+}
+
+.form__field:required,
+.form__field:invalid {
+    box-shadow: none;
+}
+
+/* hover btn */
+.mail_header_cred_set_fields_btn_link {
+}
+.mail_header_cred_set_fields_btn_link > button {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+    border-bottom: 1px solid gray;
+}
+
+/* RecyclebinCard css */
+.recyclebin_message_card {
+    min-width: 350px;
+    height: 150px;
+    width: fit-content;
+    background-color: #ffffff;
+    border-radius: 0.75em;
+    cursor: pointer;
+    transition: ease 0.2s;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.361);
+    border: 1.5px solid #f2f3f7;
+}
+
+.recyclebin_message_card:hover {
+    background-color: #d3ddf1;
+    border: 1.5px solid #1677ff;
+}
+
+.recyclebin_message_container {
+    margin-top: 1.25em;
+    margin-bottom: 1.375em;
+    margin-left: 1.375em;
+    margin-right: 2em;
+    display: flex;
+    flex-direction: row;
+    gap: 0.75em;
+}
+
+.recyclebin_message_status-ind {
+    width: 0.625em;
+    height: 0.625em;
+    background-color: #ff0000;
+    margin: 0.375em 0;
+    border-radius: 0.5em;
+}
+
+.recyclebin_message_text-wrap {
+    display: flex;
+    flex-direction: column;
+    color: #333;
+}
+
+.recyclebin_message_time {
+    font-size: 0.875em;
+    color: #777;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.recyclebin_message_text-link {
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+.recyclebin_message_button-wrap {
+    display: flex;
+    margin-top: -10px;
+    flex-direction: row;
+    width: 260px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recyclebin_message_secondary-cta {
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: red;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.recyclebin_message_primary-cta {
+    font-size: 15px;
+    background-color: transparent;
+    font-weight: 600;
+    color: green;
+    border: none;
+    border-radius: 1.5em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.recyclebin_message_primary-cta:hover {
+    text-decoration: underline;
+}
+.recyclebin_message_secondary-cta:hover {
+    text-decoration: underline;
+}
+
+.recyclebin_message_right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875em;
+}
+
+/* Actual mail cred */
+._supportmail_actual_cred_card {
+    width: 330px;
+    height: 80px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+._supportmail_actual_cred_wave {
+    position: absolute;
+    transform: rotate(90deg);
+    left: -31px;
+    top: 32px;
+    width: 80px;
+    fill: #04e4003a;
+}
+._supportmail_actual_cred_icon-container {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #04e40048;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+._supportmail_actual_cred_icon {
+    width: 17px;
+    height: 17px;
+    color: #269b24;
+}
+._supportmail_actual_cred_message-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+._supportmail_actual_cred_message-text,
+._supportmail_actual_cred_sub-text {
+    margin: 0;
+    cursor: default;
+}
+._supportmail_actual_cred_message-text {
+    color: #269b24;
+    font-size: 17px;
+    font-weight: 700;
+}
+._supportmail_actual_cred_sub-text {
+    font-size: 14px;
+    color: #555;
+}
+._supportmail_actual_cred_cross-icon {
+    width: 18px;
+    height: 18px;
+    color: #555;
+    cursor: pointer;
+}

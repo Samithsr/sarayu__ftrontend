@@ -1,0 +1,210 @@
+.admin_users_container_first {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+}
+.admin_users_container_first > h2 {
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    color: gray;
+    font-size: 40px;
+}
+.admin_users_container_first > button {
+    background: rgb(28, 26, 45);
+    color: white;
+    border-radius: 50px;
+    width: 400px;
+    height: 50px;
+    margin-top: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    padding: 0 40px;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+    transition: all 0.2s ease-in-out;
+}
+.admin_users_container_first > button:hover {
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+.admin_users_container_first_existing_company_container {
+    position: fixed;
+    backdrop-filter: blur(4px);
+    width: 100%;
+    height: 92vh;
+    top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.admin_users_container_first_existing_company_container > div:first-child {
+    position: relative;
+    width: 40%;
+    height: 70%;
+    background: white;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.092);
+}
+.admin_users_container_first_existing_company_container > div::-webkit-scrollbar {
+    display: none;
+}
+.admin_users_container_first_existing_company_container_second > div:first-child {
+    height: 12%;
+    background: rgb(32, 32, 69);
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.admin_users_container_first_existing_company_container_second > div:first-child > h3 {
+    margin: 0;
+    font-weight: 400;
+    color: white;
+}
+.admin_users_container_first_existing_company_container_second > div:first-child > h3:last-child {
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+.admin_users_container_first_existing_company_container_second > div:last-child {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding: 10px;
+}
+.admin_users_container_first_existing_company_container_second > div:last-child::-webkit-scrollbar {
+    display: none;
+}
+.admin_users_container_first_existing_company_container_second > div:last-child > p {
+    margin: 0;
+    padding: 10px 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.245);
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.admin_users_container_first_existing_company_container_second > div:last-child > p:hover {
+    background: rgb(43, 43, 43);
+    color: white;
+}
+
+.admin_users_container_first_create_company_container {
+    position: fixed;
+    backdrop-filter: blur(4px);
+    width: 100%;
+    height: 92vh;
+    top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.admin_users_container_first_create_company_container > section {
+    position: relative;
+    width: 40%;
+    min-height: 20%;
+    background: white;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.092);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.admin_users_container_first_create_company_container > section > div:first-child {
+    height: 12%;
+    background: rgb(32, 32, 69);
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.admin_users_container_first_create_company_container > section > div:first-child > h3 {
+    margin: 0;
+    font-weight: 400;
+    color: white;
+}
+.admin_users_container_first_create_company_container > section > div:first-child > h3:last-child {
+    color: red;
+    cursor: pointer;
+}
+
+.admin_search_exist_company_search {
+    display: flex;
+    margin: 10px 15px;
+    position: relative;
+}
+.admin_search_exist_company_input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.admin_search_exist_company_input[type="text"]:focus {
+    outline: none;
+}
+.admin_search_exist_company_button[type="submit"] {
+    background-color: #30475f;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.2s ease;
+}
+.admin_search_exist_company_button[type="submit"]:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 31, 136);
+}
+
+.admin_create_new_company_input_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 15px 0;
+    padding-bottom: 25px;
+}
+.admin_create_new_company_input_container > input {
+    border: none;
+    outline: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.425);
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: 90%;
+    margin: 10px;
+}
+.admin_create_new_company_input_container > textarea {
+    border: none;
+    outline: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.425);
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 90%;
+    margin: 10px;
+}
+.admin_create_new_company_input_container > button {
+    width: 30%;
+    font-size: 20px;
+    background: white;
+    border: 1px solid black;
+    color: black;
+    padding: 6px 0;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+.admin_create_new_company_input_container > button:hover {
+    background: rgb(28, 31, 64);
+    color: white;
+}

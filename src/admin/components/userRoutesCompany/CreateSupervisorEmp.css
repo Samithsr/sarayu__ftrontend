@@ -1,0 +1,802 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+.admin_create_supervisor_container {
+    height: 92vh;
+    overflow-y: scroll;
+    padding-bottom: 50px;
+}
+.admin_create_supervisor_container::-webkit-scrollbar {
+    display: none;
+}
+.admin_create_supervisor_container > div:first-child {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 50px;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    background: white;
+}
+.admin_create_supervisor_container > div > section {
+    width: 37%;
+    display: flex;
+    align-items: center;
+}
+.admin_create_supervisor_container > div > section > h3:first-child {
+    color: rgb(93, 93, 93);
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.admin_create_supervisor_container > div > section > table > tbody > tr > td {
+    color: rgba(105, 105, 105, 0.895);
+    font-size: 14px;
+}
+.admin_create_supervisor_container > div > section > table > tbody > tr > td:first-child {
+    padding-right: 10px;
+    font-weight: 500;
+}
+.admin_create_supervisor_container > div > section > table > tbody > tr:last-child > td:last-child {
+    color: rgb(0, 0, 251);
+    cursor: pointer;
+}
+.admin_create_supervisor_container > div > section > table > tbody > tr:last-child > td:last-child:hover {
+    color: rgb(0, 0, 145);
+    text-decoration: underline;
+}
+.admin_create_supervisor_container > div:first-child > div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+.admin_create_supervisor_container > div:first-child > div > section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.admin_create_supervisor_container > div:first-child > div > section > span {
+    font-weight: 500;
+    color: gray;
+    margin-top: 5px;
+    margin-left: 6px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.admin_users_view_workers_icon {
+    cursor: pointer;
+    z-index: 9999;
+    color: rgb(163, 0, 163);
+    transition: all 0.2s ease-in-out;
+}
+.admin_users_view_workers_icon:hover {
+    color: rgb(0, 0, 224);
+}
+.admin_users_view_workers_icon_active {
+    color: rgb(0, 0, 224);
+}
+
+/* switch components starts here */
+.admin_users_switch_manager_supervisor_employee_container {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    position: relative;
+}
+.admin_users_switch_manager_supervisor_employee_container_div {
+    height: 45px;
+    padding: 5px;
+    border-radius: 50px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.345);
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.admin_user_create_nav_active {
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    bottom: -3px;
+    border-radius: 10px;
+    animation: aciveNavUser 0.5s linear 0s forwards normal running;
+}
+@keyframes aciveNavUser {
+    from {
+        background: white;
+    }
+    to {
+        background: rgb(2, 173, 252);
+    }
+}
+
+.admin_users_switch_manager_supervisor_employee_container_div > div {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+.admin_users_switch_manager_supervisor_employee_container_div > div > button {
+    border: none;
+    margin: 1px;
+    padding: 5px 10px;
+    background: rgba(1, 146, 182, 0.982);
+    color: white;
+    outline: none;
+}
+.admin_users_switch_manager_supervisor_employee_container_div > div:first-child > button {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.admin_users_switch_manager_supervisor_employee_container_div > div:last-child > button {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+/* switch components ends here */
+
+.admin_create_supervisor_second_container {
+    /* background: rgb(239, 244, 249); */
+    /* box-shadow:
+        rgb(204, 219, 232) 3px 3px 6px 0px inset,
+        rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+.admin_create_supervisor_second_container > div:first-child {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.admin_create_supervisor_second_container > h4 {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    font-size: 24px;
+    color: rgba(2, 2, 2, 0.475);
+    font-family: "Kalam", cursive;
+    font-weight: 600;
+}
+.no-select {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.admin_create_supervisor_second_container > h4 > small:hover {
+    color: rgb(2, 2, 199);
+}
+.admin_create_supervisor_second_container_input_container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.admin_create_supervisor_second_container_input_container > div {
+    position: relative;
+}
+.admin_create_supervisor_second_container_input_container > div > button {
+    height: 40px;
+    width: 100px;
+    transform: translateY(14px);
+    border-radius: 50px;
+    color: white;
+    font-size: 18px;
+    background: green;
+    border: 2px solid green;
+}
+.admin_create_supervisor_second_container_input_container > div:last-child {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.admin_create_supervisor_second_container_input_container > div > button:hover {
+    background: rgb(0, 93, 0);
+}
+.admin_create_supervisor_second_container_input_container > div > label {
+    margin-left: 15px !important;
+}
+.admin_create_supervisor_second_container_input_container > div > input {
+    width: 280px;
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 50px;
+    outline: none;
+    border: 2px solid rgba(128, 128, 128, 0.365);
+}
+.admin_create_supervisor_second_container_input_container > div > input:focus {
+    border: 2px solid rgb(38, 47, 95);
+}
+
+.admin_create_supervior_employee_select_supervisor_container {
+    background: rgb(239, 244, 249);
+    padding: 20px;
+    margin-top: 20px;
+}
+.admin_create_supervior_employee_select_supervisor_container > h4 {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    /* text-align: center; */
+    font-size: 24px;
+}
+.admin_create_supervior_employee_select_supervisor_container_input_container {
+    display: flex;
+    margin: 20px 0;
+    justify-content: center;
+}
+.admin_create_supervior_employee_select_supervisor_container_input_container > div > select {
+    width: 400px;
+    border-radius: 50px;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    border: 2px solid rgba(128, 128, 128, 0.423);
+}
+.admin_supervisor_selected_them {
+    background: rgba(7, 13, 81, 0.745);
+    color: white !important;
+}
+.admin_create_supervior_employee_create_employee_container_input_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.admin_create_supervior_employee_create_employee_container_input_container > div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.admin_create_supervior_employee_create_employee_container_input_container > div > div > label {
+    margin-left: 15px !important;
+}
+.admin_create_supervior_employee_create_employee_container_input_container > div > div > input {
+    width: 280px;
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 50px;
+    outline: none;
+    border: 2px solid rgba(128, 128, 128, 0.365);
+}
+.admin_create_supervior_employee_create_employee_container_input_container > div > div:last-child {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.admin_create_supervior_employee_create_employee_container_input_container > div > div > button {
+    height: 40px;
+    width: 100px;
+    transform: translateY(10px);
+    border-radius: 50px;
+    color: white;
+    font-size: 18px;
+    background: green;
+    border: 2px solid green;
+}
+.admin_create_supervior_employee_create_employee_container_input_container > div > div > button:hover {
+    background: rgb(0, 91, 0);
+}
+
+/* show all manager popup container */
+.admin_show_all_managers_popup_container {
+    position: fixed;
+    height: 80.5vh;
+    width: 100%;
+    z-index: 99999;
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+}
+.admin_show_all_managers_second_popup_container {
+    width: 90%;
+    height: 77vh;
+    margin-top: 22px;
+    position: relative;
+}
+.admin_show_all_managers_second_popup_table {
+    background: white;
+    box-shadow: rgba(100, 100, 111, 0.58) 0px 7px 29px 0px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.admin_show_all_managers_second_popup_table > thead > tr > th {
+    background: rgb(18, 78, 101);
+    color: white;
+    padding: 15px;
+    border: 1px solid rgb(116, 116, 116);
+    text-align: center;
+}
+.admin_show_all_managers_second_popup_table > tbody {
+    height: 100%;
+    overflow-y: scroll;
+}
+.admin_show_all_managers_second_popup_table > tbody > tr:nth-child(odd) {
+    background: #fffefe;
+}
+.admin_show_all_managers_second_popup_table > tbody > tr:nth-child(even) {
+    background: rgba(233, 233, 247, 0.817);
+}
+.admin_show_all_managers_second_popup_table > tbody > tr > td {
+    color: black;
+    padding: 15px;
+    text-align: center;
+}
+.edit_emp_manager_model_icon_supervisor_and_manager_col {
+    position: relative;
+}
+.edit_emp_manager_model_icon_supervisor_and_manager_col > span {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    cursor: pointer;
+    right: 4px;
+}
+/* change all supervisor model starts here */
+.admin_users_operator_changeall_supervisor_model_container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: -10px;
+    z-index: 99999999;
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.admin_users_operator_changeall_supervisor_model_second_container {
+    width: 40%;
+    padding: 20px 0;
+    background: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.admin_users_operator_changeall_supervisor_model_second_container > p {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    color: gray;
+    padding: 3px 0;
+    font-weight: 500;
+}
+.admin_users_operator_changeall_supervisor_model_second_container > div {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.admin_users_operator_changeall_supervisor_model_second_container > div > select {
+    border: none;
+    outline: none;
+    width: 80%;
+    border: 2px solid gray;
+    border-radius: 50px;
+    height: 40px;
+    padding: 0 10px;
+    color: black;
+}
+
+.admin_users_operator_changeall_supervisor_model_second_container > footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.admin_users_operator_changeall_supervisor_model_second_container > footer > button {
+    border: none;
+    height: 40px;
+    width: 120px;
+    display: flex;
+    text-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 50px;
+}
+
+.admin_users_operator_changeall_supervisor_model_second_container > footer > button:first-child {
+    background: red;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+.admin_users_operator_changeall_supervisor_model_second_container > footer > button:last-child {
+    background: green;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+.admin_users_operator_changeall_supervisor_model_second_container > footer > button:first-child:hover {
+    background: rgb(202, 0, 0);
+}
+.admin_users_operator_changeall_supervisor_model_second_container > footer > button:last-child:hover {
+    background: rgb(0, 164, 0);
+}
+/* change all supervisor model ends here */
+/* open change supervisor model icon starts here */
+.admin_users_employee_open_swap_manager_model_container {
+    position: absolute;
+    background: red;
+    height: 50px;
+    width: 50px;
+    top: -30px;
+    left: 50px;
+    display: flex;
+    justify-content: center;
+    background: rgb(18, 78, 101);
+    align-items: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    z-index: 99999;
+    cursor: pointer;
+}
+.admin_users_employee_open_swap_manager_model_container_swap_icon {
+    color: white;
+    transform: translateY(-5px);
+}
+/* edit single user supervisor model starts here */
+.admin_users_edit_single_user_supervisor_model_container {
+    position: fixed;
+    backdrop-filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    top: -5px;
+    left: 0;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.admin_users_edit_single_user_supervisor_model_second_container {
+    width: 38%;
+    min-height: 150px;
+    background: white;
+    border-radius: 20px;
+    box-shadow:
+        rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 20px;
+}
+.admin_users_edit_single_user_supervisor_model_second_container > div:first-child > p {
+    text-align: center;
+    font-size: 22px;
+    color: gray;
+}
+.admin_users_edit_single_user_supervisor_model_second_container > section {
+    width: 100%;
+}
+.admin_users_edit_single_user_supervisor_model_second_container > section > select {
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    padding: 0 10px;
+}
+.admin_users_edit_single_user_supervisor_model_second_container > footer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+.admin_users_edit_single_user_supervisor_model_second_container > footer > button {
+    width: 100px;
+    height: 40px;
+    color: white;
+    border-radius: 50px;
+}
+.admin_users_edit_single_user_supervisor_model_second_container > footer > button:first-child {
+    background: red;
+    border: none;
+    outline: none;
+}
+.admin_users_edit_single_user_supervisor_model_second_container > footer > button:last-child {
+    background: green;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+.admin_users_edit_single_user_supervisor_model_second_container > footer > button:first-child:hover {
+    background: rgb(218, 1, 1);
+}
+.admin_users_edit_single_user_supervisor_model_second_container > footer > button:last-child:hover {
+    background: rgb(1, 103, 1);
+}
+.admin_users_edit_single_user_supervisor_model_second_container_select_option_active_supervisor {
+    display: none;
+}
+/* edit single user supervisor model ends here */
+/* open change supervisor model icon ends here */
+.admin_show_all_managers_second_popup_container_search_icon_container {
+    position: absolute;
+    z-index: 9999;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background: rgb(18, 78, 101);
+    align-items: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform: translateY(-30px);
+    cursor: pointer;
+    animation: searchShift 0.5s linear 0s forwards normal running;
+}
+@keyframes searchShift {
+    from {
+        border-top-left-radius: 50%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    to {
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+    }
+}
+.admin_show_all_managers_second_popup_container_search_icon_container_reverse {
+    animation: searchShiftRev 0.5s linear 0s forwards normal running;
+}
+@keyframes searchShiftRev {
+    from {
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+    }
+    to {
+        border-top-left-radius: 50%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+.admin_show_all_managers_second_popup_container_search_icon {
+    margin-bottom: 8px;
+}
+.admin_show_all_managers_second_popup_container_search_container {
+    position: absolute;
+    top: -30.16px;
+    left: 50px;
+    z-index: 999999;
+}
+.admin_show_all_managers_second_popup_container_search_container > input {
+    outline: none;
+    border: none;
+    border: 2px solid rgb(18, 78, 101);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    height: 32px;
+    width: 250px;
+    padding: 4px 10px;
+}
+.admin_show_all_managers_second_popup_container_search_container > select {
+    outline: none;
+    border: none;
+    border: 2px solid rgb(18, 78, 101);
+    border-radius: 50px;
+    height: 32px;
+    width: 250px;
+    padding: 4px 10px;
+    margin-left: 5px;
+}
+.admin_show_all_managers_second_popup_container_search_container > select:focus {
+    border: 2px solid rgb(44, 174, 226);
+}
+.admin_show_all_managers_second_popup_close_container {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    cursor: pointer;
+    position: absolute;
+    background: rgb(18, 78, 101);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    transform: translateX(10px) translateY(-10px);
+    border-radius: 50%;
+    z-index: 1;
+}
+.admin_show_all_managers_second_popup_close_icon {
+    font-size: 20px;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+.admin_show_all_managers_second_popup_close_icon:hover {
+    color: rgb(255, 0, 0);
+}
+
+.admin_show_all_managers_second_popup_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin_show_all_managers_second_popup_table thead {
+    background-color: #f2f2f2;
+    position: sticky;
+    top: 0;
+}
+
+.admin_show_all_managers_second_popup_table tbody {
+    display: block;
+    height: 67vh;
+    overflow-y: scroll;
+}
+.admin_show_all_managers_second_popup_table tbody::-webkit-scrollbar {
+    background-color: rgb(255, 255, 255);
+    width: 5px !important;
+}
+.admin_show_all_managers_second_popup_table tbody::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.296);
+    border-radius: 50px;
+}
+.admin_show_all_managers_second_popup_table tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.admin_show_all_managers_second_popup_table th,
+.admin_show_all_managers_second_popup_table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+/* .admin_show_all_managers_second_popup_table_active_th {
+    background: rgb(125, 124, 124) !important;
+    color: rgb(255, 255, 255) !important;
+    transition: all 0.2s ease-in-out;
+} */
+.admin_show_all_managers_second_popup_table_active_td {
+    color: rgb(63, 63, 63) !important;
+    background: rgb(227, 218, 255) !important;
+    transition: all 0.2s ease-in-out;
+}
+/* delete user model */
+.admin_user_section_delete_users_popup_container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999999;
+    margin-top: -106px;
+}
+.admin_user_section_delete_users_popup_second_container {
+    width: 30%;
+    height: 22%;
+    background: white;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.231);
+}
+.admin_user_section_delete_users_popup_delete_icon_container {
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    right: 0;
+    transform: translateY(-15px) translateX(15px);
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 99999999999;
+}
+.admin_user_section_delete_users_popup_content_container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+.admin_user_section_delete_users_popup_content_container > section > p {
+    font-size: 18px;
+    padding: 5px 10px;
+    text-align: center;
+    color: gray;
+}
+.admin_user_section_delete_users_popup_content_container > section > div {
+    display: flex;
+    justify-content: space-evenly;
+}
+.admin_user_section_delete_users_popup_content_container > section > div > button {
+    padding: 5px 15px;
+    border-radius: 50px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+.admin_user_section_delete_users_popup_content_container > section > div > button:first-child {
+    background: white;
+    color: black;
+    border: 2px solid black;
+}
+.admin_user_section_delete_users_popup_content_container > section > div > button:first-child:hover {
+    color: white;
+    background: black;
+}
+.admin_user_section_delete_users_popup_content_container > section > div > button:last-child {
+    background: red;
+    color: white;
+    border: 2px solid #ff0000;
+}
+.admin_user_section_delete_users_popup_content_container > section > div > button:last-child:hover {
+    border: 2px solid rgb(199, 1, 1);
+    background: rgb(199, 1, 1);
+}
+
+/* show company details starts here */
+.admin_create_supervisor_container_section {
+    position: relative;
+}
+.admin_users_company_details_model_container {
+    min-width: 300px;
+    height: 110px;
+    position: absolute;
+    background: radial-gradient(rgb(40, 55, 85), rgb(17, 27, 55));
+    bottom: -90px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.242);
+}
+.admin_users_company_details_model_second_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.admin_users_company_details_model_second_container_peice {
+    width: 25px;
+    height: 25px;
+    top: -10px;
+    left: 76px;
+    transform: rotate(45deg) translateY(-50%);
+    background: rgb(17, 27, 55);
+    position: absolute;
+    z-index: -99;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.328);
+}
+.admin_users_company_details_model_second_container > table > tr > td {
+    text-wrap: nowrap;
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+}
+.admin_users_company_details_model_second_container > table > tr > td:first-child {
+    font-weight: bold;
+}
+.admin_users_company_details_model_second_container > table > tr:first-child > td:last-child {
+    color: rgb(32, 250, 112);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.admin_users_company_details_model_colse_container {
+    width: 10px;
+    height: 10px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 5px;
+    top: -12px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.admin_users_company_details_model_colse_container:hover {
+    color: red;
+}
+/* show company details ends here */

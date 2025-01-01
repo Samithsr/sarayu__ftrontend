@@ -1,0 +1,13 @@
+.col-left {
+    margin-left: -16px;
+    height: 100%;
+}
+.left_img_banner_container {
+    width: 100%;
+    height: 100%;
+    /* background: #67809a; */
+    background: rgb(25, 30, 49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

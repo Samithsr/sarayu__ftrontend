@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Default: hide scrollbar */
+}
+
+::-webkit-scrollbar {
+  width: 0px; /* Default: hide scrollbar */
+}
+
+body {
+  background-color: black;
+  height: 100%;
+}
+
+/* Show scrollbar when screen size is less than 900px */
+@media screen and (max-width: 900px) {
+  * {
+    scrollbar-width: thin; /* Enable scrollbar for Firefox */
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px; /* Enable scrollbar for WebKit browsers */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: gray; /* Customize scrollbar thumb color */
+  }
+
+  body {
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+}
